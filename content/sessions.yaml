@@ -1,10 +1,10 @@
 export_defaults:
   header: 💪 {date} 重訓課表 {label}
   base_url: https://a02040213.github.io/willy-strength/
-  footer: 如有不適請立即停止，並視情況降低重量。重量固定時以增加次數/組數或放慢節奏取代加重。
+  footer: 如有不適請立即停止。表中重量是依目前數據回推的起點（單臂划船、滑輪下拉、輔助引體向上機的機器數字因場館而異，第一次請實際測試後再微調），做得到就維持、做不到先降一階，有需要在表格留言我再改。
 
 sessions:
-# === 區塊一：適應期（Week 1-4）重量固定，次數由 8 漸增到 12 ===
+# === 區塊一：適應期（Week 1-4）===
 - date: '2026-12-04'
   label: 上肢補強 W1／12（適應期）
   warmup:
@@ -12,20 +12,29 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 26kg
     sets: 3
     reps: '8'
     rest_seconds: 90
   - exercise_id: 13
+    weight: 34kg（首次請先試做，依實際感覺調整）
     sets: 3
     reps: '8/邊'
     rest_seconds: 90
   - exercise_id: 2
+    weight: 20kg
     sets: 3
     reps: '8'
     rest_seconds: 90
-  - exercise_id: 14
+  - exercise_id: 5
+    weight: 50kg（依機器重量片調整）
     sets: 3
-    reps: '3（下放 3 秒）'
+    reps: '10'
+    rest_seconds: 75
+  - exercise_id: 15
+    weight: 輔助 45kg
+    sets: 3
+    reps: '8'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
@@ -39,20 +48,29 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 26kg
     sets: 3
     reps: '9'
     rest_seconds: 90
   - exercise_id: 13
+    weight: 34kg
     sets: 3
     reps: '9/邊'
     rest_seconds: 90
   - exercise_id: 2
+    weight: 20kg
     sets: 3
     reps: '9'
     rest_seconds: 90
-  - exercise_id: 14
+  - exercise_id: 5
+    weight: 50kg
     sets: 3
-    reps: '4（下放 4 秒）'
+    reps: '11'
+    rest_seconds: 75
+  - exercise_id: 15
+    weight: 輔助 45kg
+    sets: 3
+    reps: '9'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
@@ -66,20 +84,29 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 26kg
     sets: 3
     reps: '10'
     rest_seconds: 90
   - exercise_id: 13
+    weight: 34kg
     sets: 3
     reps: '10/邊'
     rest_seconds: 90
   - exercise_id: 2
+    weight: 20kg
     sets: 3
     reps: '10'
     rest_seconds: 90
-  - exercise_id: 14
+  - exercise_id: 5
+    weight: 50kg
     sets: 3
-    reps: '5（下放 4-5 秒）'
+    reps: '12'
+    rest_seconds: 75
+  - exercise_id: 15
+    weight: 輔助 45kg
+    sets: 3
+    reps: '10'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
@@ -93,27 +120,36 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 26kg
     sets: 4
     reps: '12'
     rest_seconds: 90
   - exercise_id: 13
+    weight: 34kg
     sets: 4
     reps: '12/邊'
     rest_seconds: 90
   - exercise_id: 2
+    weight: 20kg
     sets: 4
     reps: '12'
     rest_seconds: 90
-  - exercise_id: 14
-    sets: 3
-    reps: '5（下放 5 秒）'
+  - exercise_id: 5
+    weight: 50kg
+    sets: 4
+    reps: '12'
+    rest_seconds: 75
+  - exercise_id: 15
+    weight: 輔助 45kg
+    sets: 4
+    reps: '12'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
     reps: '30 秒'
     rest_seconds: 60
 
-# === 區塊二：強化期（Week 5-8）加 2 秒停頓增加張力，次數由 6 漸增到 8 ===
+# === 區塊二：強化期（Week 5-8，加重一階）===
 - date: '2027-01-01'
   label: 上肢補強 W5／12（強化期）
   warmup:
@@ -121,20 +157,29 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 28kg
     sets: 4
-    reps: '6（底部停頓 2 秒）'
-    rest_seconds: 120
+    reps: '8'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 36kg
     sets: 4
-    reps: '6/邊（頂端停頓 2 秒）'
-    rest_seconds: 120
+    reps: '8/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 22kg
     sets: 4
-    reps: '6（底部停頓 2 秒）'
-    rest_seconds: 120
+    reps: '8'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 60kg
+    sets: 3
+    reps: '10'
+    rest_seconds: 75
   - exercise_id: 15
+    weight: 輔助 30kg
     sets: 4
-    reps: '5'
+    reps: '8'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
@@ -148,20 +193,29 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 28kg
     sets: 4
-    reps: '7（底部停頓 2 秒）'
-    rest_seconds: 120
+    reps: '9'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 36kg
     sets: 4
-    reps: '7/邊（頂端停頓 2 秒）'
-    rest_seconds: 120
+    reps: '9/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 22kg
     sets: 4
-    reps: '7（底部停頓 2 秒）'
-    rest_seconds: 120
+    reps: '9'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 60kg
+    sets: 3
+    reps: '11'
+    rest_seconds: 75
   - exercise_id: 15
+    weight: 輔助 30kg
     sets: 4
-    reps: '6'
+    reps: '9'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
@@ -175,20 +229,29 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 28kg
     sets: 4
-    reps: '8（底部停頓 2 秒）'
-    rest_seconds: 120
+    reps: '10'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 36kg
     sets: 4
-    reps: '8/邊（頂端停頓 2 秒）'
-    rest_seconds: 120
+    reps: '10/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 22kg
     sets: 4
-    reps: '8（底部停頓 2 秒）'
-    rest_seconds: 120
+    reps: '10'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 60kg
+    sets: 3
+    reps: '12'
+    rest_seconds: 75
   - exercise_id: 15
+    weight: 輔助 30kg
     sets: 4
-    reps: '7'
+    reps: '10'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
@@ -202,27 +265,36 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 28kg
     sets: 4
-    reps: '8（下放 3 秒）'
-    rest_seconds: 120
+    reps: '12'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 36kg
     sets: 4
-    reps: '8/邊（下放 3 秒）'
-    rest_seconds: 120
+    reps: '12/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 22kg
     sets: 4
-    reps: '8（下放 3 秒）'
-    rest_seconds: 120
+    reps: '12'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 60kg
+    sets: 4
+    reps: '12'
+    rest_seconds: 75
   - exercise_id: 15
+    weight: 輔助 30kg
     sets: 4
-    reps: '8（換更細彈力帶，若有）'
+    reps: '12'
     rest_seconds: 90
   - exercise_id: 16
     sets: 3
     reps: '40 秒'
     rest_seconds: 60
 
-# === 區塊三：巔峰期（Week 9-12）重量固定改走高次數，引體向上改全程測試 ===
+# === 區塊三：巔峰期（Week 9-12，再加重一階；W12 引體向上改全程不輔助測試） ===
 - date: '2027-01-29'
   label: 上肢補強 W9／12（巔峰期）
   warmup:
@@ -230,21 +302,30 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 30kg
     sets: 4
-    reps: '15'
-    rest_seconds: 90
+    reps: '8'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 38kg
     sets: 4
-    reps: '15/邊'
-    rest_seconds: 90
+    reps: '8/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 24kg
     sets: 4
-    reps: '15'
-    rest_seconds: 90
-  - exercise_id: 17
+    reps: '8'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 70kg
     sets: 3
-    reps: 'AMRAP（全程不輔助）'
-    rest_seconds: 120
+    reps: '10'
+    rest_seconds: 75
+  - exercise_id: 15
+    weight: 輔助 15kg
+    sets: 4
+    reps: '8'
+    rest_seconds: 90
   - exercise_id: 16
     sets: 3
     reps: '40 秒'
@@ -257,21 +338,30 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 30kg
     sets: 4
-    reps: '17'
-    rest_seconds: 90
+    reps: '9'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 38kg
     sets: 4
-    reps: '17/邊'
-    rest_seconds: 90
+    reps: '9/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 24kg
     sets: 4
-    reps: '17'
-    rest_seconds: 90
-  - exercise_id: 17
+    reps: '9'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 70kg
     sets: 3
-    reps: 'AMRAP（全程不輔助）'
-    rest_seconds: 120
+    reps: '11'
+    rest_seconds: 75
+  - exercise_id: 15
+    weight: 輔助 15kg
+    sets: 4
+    reps: '9'
+    rest_seconds: 90
   - exercise_id: 16
     sets: 3
     reps: '45 秒'
@@ -284,21 +374,30 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 30kg
     sets: 4
-    reps: '20'
-    rest_seconds: 90
+    reps: '10'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 38kg
     sets: 4
-    reps: '20/邊'
-    rest_seconds: 90
+    reps: '10/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 24kg
     sets: 4
-    reps: '20'
-    rest_seconds: 90
-  - exercise_id: 17
+    reps: '10'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 70kg
     sets: 3
-    reps: 'AMRAP（全程不輔助）'
-    rest_seconds: 120
+    reps: '12'
+    rest_seconds: 75
+  - exercise_id: 15
+    weight: 輔助 15kg
+    sets: 4
+    reps: '10'
+    rest_seconds: 90
   - exercise_id: 16
     sets: 3
     reps: '45 秒'
@@ -311,20 +410,28 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
+    weight: 30kg
     sets: 4
-    reps: '20'
-    rest_seconds: 90
+    reps: '12'
+    rest_seconds: 105
   - exercise_id: 13
+    weight: 38kg
     sets: 4
-    reps: '20/邊'
-    rest_seconds: 90
+    reps: '12/邊'
+    rest_seconds: 105
   - exercise_id: 2
+    weight: 24kg
     sets: 4
-    reps: '20'
-    rest_seconds: 90
+    reps: '12'
+    rest_seconds: 105
+  - exercise_id: 5
+    weight: 70kg
+    sets: 4
+    reps: '12'
+    rest_seconds: 75
   - exercise_id: 17
     sets: 3
-    reps: 'AMRAP（測試連續下數，與起點的 0 下比較）'
+    reps: 'AMRAP（全程不輔助，測試連續下數，與起點的 0 下比較）'
     rest_seconds: 120
   - exercise_id: 16
     sets: 3

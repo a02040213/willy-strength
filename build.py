@@ -39,7 +39,8 @@ def render_export_text(session, exercises_by_id, defaults):
     block_lines = []
     for i, block in enumerate(session["blocks"], start=1):
         exercise = exercises_by_id[block["exercise_id"]]
-        line = f"{_item_marker(i)} {exercise['title_zh']} {block['sets']} 組 x {block['reps']}（休息 {block['rest_seconds']} 秒）"
+        weight_part = f"{block['weight']} x " if block.get("weight") else ""
+        line = f"{_item_marker(i)} {exercise['title_zh']} {weight_part}{block['sets']} 組 x {block['reps']}（休息 {block['rest_seconds']} 秒）"
         detail = exercise.get("summary") or exercise.get("title_en") or ""
         if detail:
             line += f"\n{detail}"

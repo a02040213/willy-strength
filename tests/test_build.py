@@ -50,6 +50,12 @@ def test_block_falls_back_to_title_en_without_summary():
     assert "1️⃣ 伏地挺身 3 組 x 12-15（休息 60 秒）\nPush-up" in text
 
 
+def test_block_includes_weight_when_present():
+    session = make_session(blocks=[{"exercise_id": 1, "weight": "26kg", "sets": 3, "reps": "8", "rest_seconds": 90}])
+    text = render_export_text(session, EXERCISES_BY_ID, DEFAULTS)
+    assert "1️⃣ 槓鈴臥推 26kg x 3 組 x 8（休息 90 秒）" in text
+
+
 def test_per_session_header_footer_overrides_defaults():
     session = make_session(export_header="🏋️ 自訂標題", export_footer="請準時到")
     text = render_export_text(session, EXERCISES_BY_ID, DEFAULTS)

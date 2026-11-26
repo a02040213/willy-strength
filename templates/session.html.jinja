@@ -69,7 +69,7 @@
   <li class="session-block">
     <div class="exercise-text">
       <span class="name">{{ block.exercise.title_zh }} <span class="en">{{ block.exercise.title_en }}</span></span>
-      <span class="scheme">{{ block.sets }} 組 x {{ block.reps }}</span>
+      <span class="scheme">{% if block.weight %}{{ block.weight }} x {% endif %}{{ block.sets }} 組 x {{ block.reps }}</span>
       <ul class="note method-list">
         {% for line in block.exercise.method %}<li>{{ line }}</li>{% endfor %}
       </ul>
