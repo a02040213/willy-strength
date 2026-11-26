@@ -12,19 +12,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 26kg
+    weight: 24kg
     sets: 3
-    reps: '8'
+    reps: '6'
     rest_seconds: 90
   - exercise_id: 13
-    weight: 34kg（首次請先試做，依實際感覺調整）
+    weight: 32kg（首次請先試做，依實際感覺調整）
     sets: 3
-    reps: '8/邊'
+    reps: '6/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 18kg
+    weight: 16kg
     sets: 3
-    reps: '8'
+    reps: '6'
     rest_seconds: 90
   - exercise_id: 5
     weight: 50kg（依機器重量片調整）
@@ -48,19 +48,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 26kg
+    weight: 24kg
     sets: 3
-    reps: '9'
+    reps: '7'
     rest_seconds: 90
   - exercise_id: 13
-    weight: 34kg
+    weight: 32kg
     sets: 3
-    reps: '9/邊'
+    reps: '7/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 18kg
+    weight: 16kg
     sets: 3
-    reps: '9'
+    reps: '7'
     rest_seconds: 90
   - exercise_id: 5
     weight: 50kg
@@ -84,19 +84,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 26kg
+    weight: 24kg
     sets: 3
-    reps: '10'
+    reps: '8'
     rest_seconds: 90
   - exercise_id: 13
-    weight: 34kg
+    weight: 32kg
     sets: 3
-    reps: '10/邊'
+    reps: '8/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 18kg
+    weight: 16kg
     sets: 3
-    reps: '10'
+    reps: '8'
     rest_seconds: 90
   - exercise_id: 5
     weight: 50kg
@@ -120,19 +120,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 26kg
+    weight: 24kg
     sets: 4
-    reps: '12'
+    reps: '10'
     rest_seconds: 90
   - exercise_id: 13
-    weight: 34kg
+    weight: 32kg
     sets: 4
-    reps: '12/邊'
+    reps: '10/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 18kg
+    weight: 16kg
     sets: 4
-    reps: '12'
+    reps: '10'
     rest_seconds: 90
   - exercise_id: 5
     weight: 50kg
@@ -159,17 +159,17 @@ sessions:
   - exercise_id: 12
     weight: 28kg
     sets: 4
-    reps: '8'
+    reps: '6'
     rest_seconds: 105
   - exercise_id: 13
     weight: 36kg
     sets: 4
-    reps: '8/邊'
+    reps: '6/邊'
     rest_seconds: 105
   - exercise_id: 2
     weight: 20kg
     sets: 4
-    reps: '8'
+    reps: '6'
     rest_seconds: 105
   - exercise_id: 5
     weight: 60kg
@@ -195,17 +195,17 @@ sessions:
   - exercise_id: 12
     weight: 28kg
     sets: 4
-    reps: '9'
+    reps: '7'
     rest_seconds: 105
   - exercise_id: 13
     weight: 36kg
     sets: 4
-    reps: '9/邊'
+    reps: '7/邊'
     rest_seconds: 105
   - exercise_id: 2
     weight: 20kg
     sets: 4
-    reps: '9'
+    reps: '7'
     rest_seconds: 105
   - exercise_id: 5
     weight: 60kg
@@ -231,17 +231,17 @@ sessions:
   - exercise_id: 12
     weight: 28kg
     sets: 4
-    reps: '10'
+    reps: '8'
     rest_seconds: 105
   - exercise_id: 13
     weight: 36kg
     sets: 4
-    reps: '10/邊'
+    reps: '8/邊'
     rest_seconds: 105
   - exercise_id: 2
     weight: 20kg
     sets: 4
-    reps: '10'
+    reps: '8'
     rest_seconds: 105
   - exercise_id: 5
     weight: 60kg
@@ -267,17 +267,17 @@ sessions:
   - exercise_id: 12
     weight: 28kg
     sets: 4
-    reps: '12'
+    reps: '10'
     rest_seconds: 105
   - exercise_id: 13
     weight: 36kg
     sets: 4
-    reps: '12/邊'
+    reps: '10/邊'
     rest_seconds: 105
   - exercise_id: 2
     weight: 20kg
     sets: 4
-    reps: '12'
+    reps: '10'
     rest_seconds: 105
   - exercise_id: 5
     weight: 60kg
@@ -302,19 +302,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 30kg
+    weight: 32kg
     sets: 4
-    reps: '8'
+    reps: '6'
     rest_seconds: 105
   - exercise_id: 13
-    weight: 38kg
+    weight: 40kg
     sets: 4
-    reps: '8/邊'
+    reps: '6/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 24kg
     sets: 4
-    reps: '8'
+    reps: '6'
     rest_seconds: 105
   - exercise_id: 5
     weight: 70kg
@@ -338,19 +338,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 30kg
+    weight: 32kg
     sets: 4
-    reps: '9'
+    reps: '7'
     rest_seconds: 105
   - exercise_id: 13
-    weight: 38kg
+    weight: 40kg
     sets: 4
-    reps: '9/邊'
+    reps: '7/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 24kg
     sets: 4
-    reps: '9'
+    reps: '7'
     rest_seconds: 105
   - exercise_id: 5
     weight: 70kg
@@ -374,19 +374,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 30kg
+    weight: 32kg
     sets: 4
-    reps: '10'
+    reps: '8'
     rest_seconds: 105
   - exercise_id: 13
-    weight: 38kg
+    weight: 40kg
     sets: 4
-    reps: '10/邊'
+    reps: '8/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 24kg
     sets: 4
-    reps: '10'
+    reps: '8'
     rest_seconds: 105
   - exercise_id: 5
     weight: 70kg
@@ -410,19 +410,19 @@ sessions:
     note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
   - exercise_id: 12
-    weight: 30kg
+    weight: 32kg
     sets: 4
-    reps: '12'
+    reps: '10'
     rest_seconds: 105
   - exercise_id: 13
-    weight: 38kg
+    weight: 40kg
     sets: 4
-    reps: '12/邊'
+    reps: '10/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 24kg
     sets: 4
-    reps: '12'
+    reps: '10'
     rest_seconds: 105
   - exercise_id: 5
     weight: 70kg
