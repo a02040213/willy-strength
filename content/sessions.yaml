@@ -22,7 +22,7 @@ sessions:
     reps: '8/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 20kg
+    weight: 18kg
     sets: 3
     reps: '8'
     rest_seconds: 90
@@ -58,7 +58,7 @@ sessions:
     reps: '9/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 20kg
+    weight: 18kg
     sets: 3
     reps: '9'
     rest_seconds: 90
@@ -94,7 +94,7 @@ sessions:
     reps: '10/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 20kg
+    weight: 18kg
     sets: 3
     reps: '10'
     rest_seconds: 90
@@ -130,7 +130,7 @@ sessions:
     reps: '12/邊'
     rest_seconds: 90
   - exercise_id: 2
-    weight: 20kg
+    weight: 18kg
     sets: 4
     reps: '12'
     rest_seconds: 90
@@ -167,7 +167,7 @@ sessions:
     reps: '8/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 20kg
     sets: 4
     reps: '8'
     rest_seconds: 105
@@ -203,7 +203,7 @@ sessions:
     reps: '9/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 20kg
     sets: 4
     reps: '9'
     rest_seconds: 105
@@ -239,7 +239,7 @@ sessions:
     reps: '10/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 20kg
     sets: 4
     reps: '10'
     rest_seconds: 105
@@ -275,7 +275,7 @@ sessions:
     reps: '12/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 22kg
+    weight: 20kg
     sets: 4
     reps: '12'
     rest_seconds: 105
@@ -312,7 +312,7 @@ sessions:
     reps: '8/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 24kg
+    weight: 22kg
     sets: 4
     reps: '8'
     rest_seconds: 105
@@ -348,7 +348,7 @@ sessions:
     reps: '9/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 24kg
+    weight: 22kg
     sets: 4
     reps: '9'
     rest_seconds: 105
@@ -384,7 +384,7 @@ sessions:
     reps: '10/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 24kg
+    weight: 22kg
     sets: 4
     reps: '10'
     rest_seconds: 105
@@ -420,7 +420,7 @@ sessions:
     reps: '12/邊'
     rest_seconds: 105
   - exercise_id: 2
-    weight: 24kg
+    weight: 22kg
     sets: 4
     reps: '12'
     rest_seconds: 105
