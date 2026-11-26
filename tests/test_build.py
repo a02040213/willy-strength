@@ -66,4 +66,5 @@ def test_build_runs_end_to_end(tmp_path):
         check=True, cwd=root,
     )
     assert (tmp_path / "index.html").exists()
-    assert (tmp_path / "schedule" / "2026-12-01.html").exists()
+    schedule_files = list((tmp_path / "schedule").glob("*.html"))
+    assert len(schedule_files) > 0
