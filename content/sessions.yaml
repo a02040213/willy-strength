@@ -1,6 +1,6 @@
 export_defaults:
   header: 💪 {date} 重訓課表 {label}
-  base_url: https://a02040213.github.io/strength-training/
+  base_url: https://a02040213.github.io/willy-strength/
   footer: 如有不適請立即停止，並視情況降低重量。
 
 sessions:

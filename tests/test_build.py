@@ -12,7 +12,7 @@ EXERCISES_BY_ID = {
 
 DEFAULTS = {
     "header": "💪 {date} 重訓課表 {label}",
-    "base_url": "https://a02040213.github.io/strength-training/",
+    "base_url": "https://a02040213.github.io/willy-strength/",
     "footer": "如有不適請立即停止。",
 }
 
@@ -35,7 +35,7 @@ def test_full_session_with_defaults():
     text = render_export_text(make_session(), EXERCISES_BY_ID, DEFAULTS)
     assert text.startswith(
         "💪 2026-12-01 重訓課表 推力日\n\n"
-        "課表詳細連結：https://a02040213.github.io/strength-training/schedule/2026-12-01.html\n\n"
+        "課表詳細連結：https://a02040213.github.io/willy-strength/schedule/2026-12-01.html\n\n"
         "🔥 熱身 10 分鐘：動態伸展\n\n"
         "1️⃣ 槓鈴臥推 4 組 x 6-8（休息 120 秒）\n"
         "複合推力動作，主練胸大肌、前三角肌與肱三頭肌。\n\n"
