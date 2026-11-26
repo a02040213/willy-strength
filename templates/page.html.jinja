@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ site.title }}</title>
+<meta name="description" content="{{ site.subtitle }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:description" content="{{ site.subtitle }}">
+<style>{{ css | safe }}</style>
+</head><body>
+<div class="wrap">
+
+<div class="hero">
+  <p class="kicker">{{ site.title_en }}</p>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.subtitle }}</p>
+</div>
+
+{% if upcoming_sessions or past_sessions %}
+<section class="sessions-nav">
+  <h2>即將進行的訓練</h2>
+  {% if upcoming_sessions %}
+  <ul>
+    {% for s in upcoming_sessions %}
+    <li><a href="schedule/{{ s.date }}.html">{{ s.date }} {{ s.label }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if past_sessions %}
+  <details class="past-sessions">
+    <summary>過去的訓練</summary>
+    <ul>
+      {% for s in past_sessions %}
+      <li><a href="schedule/{{ s.date }}.html">{{ s.date }} {{ s.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </details>
+  {% endif %}
+</section>
+{% endif %}
+
+<nav class="jump">
+  {% for cat in categories %}
+  <a href="#cat-{{ cat.code }}">{{ cat.code }} {{ cat.title_zh }}</a>
+  {% endfor %}
+</nav>
+
+{% for cat in categories %}
+<section class="category" id="cat-{{ cat.code }}">
+  <div class="category-head">
+    <span class="code">{{ cat.code }}</span>
+    <h2>{{ cat.title_zh }}</h2>
+    <span class="en">{{ cat.title_en }}</span>
+  </div>
+  <p class="category-focus">訓練重點：{{ cat.focus }}</p>
+
+  {% for exercise in cat.exercises %}
+  <details class="exercise" id="exercise-{{ exercise.id }}">
+    <summary class="exercise-head">
+      <span class="num">{{ exercise.id }}</span>
+      <h3>{{ exercise.title_zh }}</h3>
+      <span class="en">{{ exercise.title_en }}</span>
+    </summary>
+    <div class="exercise-body">
+      <p class="default-scheme">預設 {{ exercise.default_sets }} 組 x {{ exercise.default_reps }}，組間休息 {{ exercise.default_rest_seconds }} 秒</p>
+      <h4>訓練方式</h4>
+      <ul>
+        {% for line in exercise.method %}<li>{{ line }}</li>{% endfor %}
+      </ul>
+      <h4>訓練重點</h4>
+      <ul>
+        {% for line in exercise.points %}<li>{{ line }}</li>{% endfor %}
+      </ul>
+      {% if exercise.note %}<p class="note">{{ exercise.note }}</p>{% endif %}
+    </div>
+  </details>
+  {% endfor %}
+</section>
+{% endfor %}
+
+<p class="footer">重訓課表大總表</p>
+</div>
+</body></html>

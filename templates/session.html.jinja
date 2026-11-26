@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ session.date }} [{{ session.label }}]</title>
+<meta name="description" content="{{ session.date }} 重訓課表：{{ session.label }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="重訓課表大總表">
+<meta property="og:title" content="{{ session.date }} [{{ session.label }}]">
+<meta property="og:description" content="{{ session.date }} 重訓課表：{{ session.label }}">
+<style>{{ css | safe }}</style>
+</head><body>
+<div class="wrap">
+
+<p class="back-link"><a href="../index.html">← 回課表大總表</a></p>
+
+<div class="hero">
+  <p class="kicker">Session Schedule</p>
+  <h1>{{ session.date }} [{{ session.label }}]</h1>
+  <div class="hero-actions">
+    <button id="copy-export-btn" type="button">複製文字</button>
+  </div>
+  <span id="copy-export-status" aria-live="polite"></span>
+  <script>
+  (function () {
+    var text = {{ session.export_text | tojson }};
+    var btn = document.getElementById("copy-export-btn");
+    var status = document.getElementById("copy-export-status");
+
+    function fallbackCopy(value) {
+      var ta = document.createElement("textarea");
+      ta.value = value;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      return ok;
+    }
+
+    btn.addEventListener("click", function () {
+      // navigator.clipboard needs a secure context (https, or http://localhost);
+      // GitHub Pages is https so this is the normal path in production.
+      if (window.isSecureContext && navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(function () {
+          status.textContent = "已複製！";
+        }, function () {
+          status.textContent = fallbackCopy(text) ? "已複製！" : "複製失敗，請手動選取文字";
+        });
+      } else {
+        status.textContent = fallbackCopy(text) ? "已複製！" : "複製失敗，請手動選取文字";
+      }
+    });
+  })();
+  </script>
+</div>
+
+<section class="session-block warmup">
+  <span class="time">{{ session.warmup.duration }}</span>
+  <span class="name">熱身：{{ session.warmup.note }}</span>
+</section>
+
+<ol class="session-list">
+  {% for block in session.blocks %}
+  <li class="session-block">
+    <div class="exercise-text">
+      <span class="name">{{ block.exercise.title_zh }} <span class="en">{{ block.exercise.title_en }}</span></span>
+      <span class="scheme">{{ block.sets }} 組 x {{ block.reps }}</span>
+      <ul class="note method-list">
+        {% for line in block.exercise.method %}<li>{{ line }}</li>{% endfor %}
+      </ul>
+      <div class="rest-timer" data-rest-seconds="{{ block.rest_seconds }}">
+        <button type="button" class="rest-timer-btn">開始休息（{{ block.rest_seconds }} 秒）</button>
+        <div class="rest-timer-fill"></div>
+        <span class="rest-timer-display"></span>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+
+</div>
+<script>
+(function () {
+  function formatTime(totalSeconds) {
+    var m = Math.floor(totalSeconds / 60);
+    var s = totalSeconds % 60;
+    return (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  }
+
+  function speak(text) {
+    if (!window.speechSynthesis) return;
+    speechSynthesis.cancel();
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.lang = "en-US";
+    speechSynthesis.speak(utter);
+  }
+
+  document.querySelectorAll(".rest-timer").forEach(function (widget) {
+    var totalSeconds = parseInt(widget.dataset.restSeconds, 10);
+    var btn = widget.querySelector(".rest-timer-btn");
+    var fill = widget.querySelector(".rest-timer-fill");
+    var display = widget.querySelector(".rest-timer-display");
+    var remaining = totalSeconds;
+    var handle = null;
+
+    function render() {
+      display.textContent = formatTime(remaining);
+      var pct = Math.min(100, Math.max(0, ((totalSeconds - remaining) / totalSeconds) * 100));
+      fill.style.width = pct + "%";
+    }
+
+    function stop() {
+      clearInterval(handle);
+      handle = null;
+    }
+
+    function reset() {
+      stop();
+      remaining = totalSeconds;
+      fill.style.width = "0%";
+      display.textContent = "";
+      btn.textContent = "開始休息（" + totalSeconds + " 秒）";
+    }
+
+    function tick() {
+      remaining -= 1;
+      if (remaining <= 0) {
+        remaining = 0;
+        render();
+        speak("rest over");
+        if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+        stop();
+        btn.textContent = "再休息一次";
+        return;
+      }
+      render();
+    }
+
+    btn.addEventListener("click", function () {
+      if (handle) {
+        reset();
+        return;
+      }
+      remaining = totalSeconds;
+      render();
+      btn.textContent = "休息中…（點擊重置）";
+      handle = setInterval(tick, 1000);
+    });
+  });
+})();
+</script>
+</body></html>

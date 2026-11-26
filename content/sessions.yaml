@@ -1,0 +1,43 @@
+export_defaults:
+  header: 💪 {date} 重訓課表 {label}
+  base_url: https://a02040213.github.io/strength-training/
+  footer: 如有不適請立即停止，並視情況降低重量。
+
+sessions:
+- date: '2026-12-01'
+  label: 推力日（胸/肩/三頭）
+  warmup:
+    duration: 10 分鐘
+    note: 動態伸展 + 輕重量熱身組
+  blocks:
+  - exercise_id: 1
+    sets: 4
+    reps: '6-8'
+    rest_seconds: 120
+  - exercise_id: 2
+    sets: 4
+    reps: '8-10'
+    rest_seconds: 90
+  - exercise_id: 3
+    sets: 3
+    reps: '12-15'
+    rest_seconds: 60
+
+- date: '2026-12-04'
+  label: 拉力日（背/二頭）
+  warmup:
+    duration: 10 分鐘
+    note: 動態伸展 + 輕重量熱身組
+  blocks:
+  - exercise_id: 4
+    sets: 4
+    reps: '8-10'
+    rest_seconds: 90
+  - exercise_id: 5
+    sets: 4
+    reps: '10-12'
+    rest_seconds: 75
+  - exercise_id: 6
+    sets: 3
+    reps: '10-12'
+    rest_seconds: 60

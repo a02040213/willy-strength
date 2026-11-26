@@ -1,0 +1,183 @@
+site:
+  title: 重訓課表大總表
+  title_en: Strength Training Library & Master Schedule
+  subtitle: 依訓練部位分類的重訓動作庫，各單日課表由此串連細節
+
+categories:
+- code: '01'
+  title_zh: 上肢推
+  title_en: Upper Push
+  focus: 建立胸、肩、三頭肌群的推力與穩定度。
+  exercises:
+  - id: 1
+    title_zh: 槓鈴臥推
+    title_en: Barbell Bench Press
+    default_sets: 4
+    default_reps: '6-8'
+    default_rest_seconds: 120
+    method:
+    - 躺上臥推椅，雙腳踩穩地面，肩胛骨下壓後收。
+    - 握距略寬於肩，下放至胸口上方，手肘約 45 度角。
+    - 推起時全程收緊核心，避免腰部過度拱起。
+    points:
+    - 下放時控制速度，避免彈震。
+    - 鎖定肩胛穩定再推起。
+    summary: 複合推力動作，主練胸大肌、前三角肌與肱三頭肌。
+  - id: 2
+    title_zh: 啞鈴肩推
+    title_en: Dumbbell Shoulder Press
+    default_sets: 4
+    default_reps: '8-10'
+    default_rest_seconds: 90
+    method:
+    - 坐姿或站姿皆可，啞鈴置於肩側，手肘略朝前。
+    - 垂直向上推至手臂接近伸直，勿鎖死肘關節。
+    - 緩慢下放回到起始位置。
+    points:
+    - 核心收緊避免腰椎過度伸展。
+    - 肩胛保持穩定，不要聳肩代償。
+    summary: 主練三角肌，建立肩部推力與穩定度。
+  - id: 3
+    title_zh: 伏地挺身
+    title_en: Push-up
+    default_sets: 3
+    default_reps: '12-15'
+    default_rest_seconds: 60
+    method:
+    - 雙手略寬於肩，身體呈一直線。
+    - 下放至胸口接近地面，手肘約 45 度角。
+    - 推起全程保持核心與臀部收緊。
+    points:
+    - 避免塌腰或翹臀。
+    - 可墊高雙手降低難度，或墊高雙腳提升難度。
+    summary: 自體重推力動作，適合作為熱身或收尾。
+
+- code: '02'
+  title_zh: 上肢拉
+  title_en: Upper Pull
+  focus: 建立背部、二頭肌群的拉力與姿勢穩定度。
+  exercises:
+  - id: 4
+    title_zh: 槓鈴划船
+    title_en: Barbell Row
+    default_sets: 4
+    default_reps: '8-10'
+    default_rest_seconds: 90
+    method:
+    - 髖關節鉸鏈前傾，背部打直，膝蓋微彎。
+    - 將槓鈴拉向下腹，手肘貼近身體。
+    - 控制下放，避免借用腰部晃動發力。
+    points:
+    - 全程維持中立脊椎。
+    - 用背部發力拉動，而非只靠手臂。
+    summary: 複合拉力動作，主練背闊肌與中背肌群。
+  - id: 5
+    title_zh: 滑輪下拉
+    title_en: Lat Pulldown
+    default_sets: 4
+    default_reps: '10-12'
+    default_rest_seconds: 75
+    method:
+    - 握距略寬於肩，上半身微後傾。
+    - 將橫桿拉至鎖骨上方，夾緊肩胛骨。
+    - 緩慢回到起始位置，手臂完全伸展。
+    points:
+    - 避免用身體後仰借力。
+    - 感受背闊肌收縮而非手臂代償。
+    summary: 引體向上的替代動作，主練背闊肌。
+  - id: 6
+    title_zh: 啞鈴二頭彎舉
+    title_en: Dumbbell Bicep Curl
+    default_sets: 3
+    default_reps: '10-12'
+    default_rest_seconds: 60
+    method:
+    - 站姿，手臂自然下垂，掌心朝前。
+    - 彎舉至啞鈴接近肩膀，手肘固定不前後晃動。
+    - 緩慢下放至起始位置。
+    points:
+    - 避免借用身體擺盪發力。
+    - 全程控制速度，尤其是離心階段。
+    summary: 孤立動作，主練肱二頭肌。
+
+- code: '03'
+  title_zh: 下肢
+  title_en: Lower Body
+  focus: 建立股四頭肌、臀肌、腿後肌群的力量與穩定度。
+  exercises:
+  - id: 7
+    title_zh: 槓鈴背蹲舉
+    title_en: Barbell Back Squat
+    default_sets: 4
+    default_reps: '5-8'
+    default_rest_seconds: 150
+    method:
+    - 槓鈴置於上背斜方肌，雙腳與肩同寬或略寬。
+    - 髖、膝同時彎曲下蹲，直到大腿與地面平行或更低。
+    - 腳跟發力站起，全程核心收緊。
+    points:
+    - 膝蓋方向與腳尖一致，避免內夾。
+    - 下蹲過程保持胸口朝上、脊椎中立。
+    summary: 下肢力量基礎動作，主練股四頭肌與臀肌。
+  - id: 8
+    title_zh: 羅馬尼亞硬舉
+    title_en: Romanian Deadlift
+    default_sets: 4
+    default_reps: '8-10'
+    default_rest_seconds: 120
+    method:
+    - 雙手握槓，站姿與肩同寬，膝蓋微彎固定。
+    - 髖關節向後鉸鏈，上半身前傾，槓鈴貼近小腿下放。
+    - 感受腿後肌群與臀部拉伸後，髖部發力站起。
+    points:
+    - 全程背部打直，避免駝背。
+    - 感受腿後側張力而非只靠下背出力。
+    summary: 髖主導動作，主練腿後肌群與臀大肌。
+  - id: 9
+    title_zh: 保加利亞分腿蹲
+    title_en: Bulgarian Split Squat
+    default_sets: 3
+    default_reps: '10-12'
+    default_rest_seconds: 90
+    method:
+    - 後腳置於穩定平台，前腳與平台保持約一步半距離。
+    - 下蹲至前腿大腿接近水平，後膝輕觸地面上方。
+    - 前腳腳跟發力站起。
+    points:
+    - 軀幹保持直立，避免過度前傾。
+    - 單邊訓練，兩側分別完成組數。
+    summary: 單邊訓練動作，加強下肢穩定度與臀肌。
+
+- code: '04'
+  title_zh: 核心
+  title_en: Core
+  focus: 建立軀幹穩定度與抗旋轉能力。
+  exercises:
+  - id: 10
+    title_zh: 棒式
+    title_en: Plank
+    default_sets: 3
+    default_reps: '45-60 秒'
+    default_rest_seconds: 45
+    method:
+    - 前臂與腳尖撐地，身體呈一直線。
+    - 收緊核心與臀部，避免塌腰或翹臀。
+    - 維持穩定呼吸，計時撐住。
+    points:
+    - 下巴微收，避免抬頭。
+    - 若感到下背痠痛，先縮短時間並檢查姿勢。
+    summary: 等長核心訓練，建立軀幹穩定度。
+  - id: 11
+    title_zh: 死蟲式
+    title_en: Dead Bug
+    default_sets: 3
+    default_reps: '10-12 下/邊'
+    default_rest_seconds: 45
+    method:
+    - 仰躺，雙手舉向天花板，雙腿屈膝呈 90 度。
+    - 對側手腳緩慢向外伸展並下放，下背貼緊地面。
+    - 回到起始位置後換邊重複。
+    points:
+    - 全程維持下背貼地，避免代償拱腰。
+    - 動作放慢，強調控制而非速度。
+    summary: 抗伸展核心訓練，強化軀幹控制能力。
