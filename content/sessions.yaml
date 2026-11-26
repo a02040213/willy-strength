@@ -1,43 +1,332 @@
 export_defaults:
   header: 💪 {date} 重訓課表 {label}
   base_url: https://a02040213.github.io/willy-strength/
-  footer: 如有不適請立即停止，並視情況降低重量。
+  footer: 如有不適請立即停止，並視情況降低重量。重量固定時以增加次數/組數或放慢節奏取代加重。
 
 sessions:
+# === 區塊一：適應期（Week 1-4）重量固定，次數由 8 漸增到 12 ===
 - date: '2026-12-01'
-  label: 推力日（胸/肩/三頭）
+  label: 上肢補強 W1／12（適應期）
   warmup:
     duration: 10 分鐘
-    note: 動態伸展 + 輕重量熱身組
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
-  - exercise_id: 1
+  - exercise_id: 12
+    sets: 3
+    reps: '8'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 3
+    reps: '8/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 3
+    reps: '8'
+    rest_seconds: 90
+  - exercise_id: 14
+    sets: 3
+    reps: '3（下放 3 秒）'
+    rest_seconds: 90
+  - exercise_id: 16
+    sets: 3
+    reps: '20 秒'
+    rest_seconds: 60
+
+- date: '2026-12-08'
+  label: 上肢補強 W2／12（適應期）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 3
+    reps: '9'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 3
+    reps: '9/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 3
+    reps: '9'
+    rest_seconds: 90
+  - exercise_id: 14
+    sets: 3
+    reps: '4（下放 4 秒）'
+    rest_seconds: 90
+  - exercise_id: 16
+    sets: 3
+    reps: '25 秒'
+    rest_seconds: 60
+
+- date: '2026-12-15'
+  label: 上肢補強 W3／12（適應期）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 3
+    reps: '10'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 3
+    reps: '10/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 3
+    reps: '10'
+    rest_seconds: 90
+  - exercise_id: 14
+    sets: 3
+    reps: '5（下放 4-5 秒）'
+    rest_seconds: 90
+  - exercise_id: 16
+    sets: 3
+    reps: '30 秒'
+    rest_seconds: 60
+
+- date: '2026-12-22'
+  label: 上肢補強 W4／12（適應期．區塊測試）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
     sets: 4
-    reps: '6-8'
+    reps: '12'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 4
+    reps: '12/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 4
+    reps: '12'
+    rest_seconds: 90
+  - exercise_id: 14
+    sets: 3
+    reps: '5（下放 5 秒）'
+    rest_seconds: 90
+  - exercise_id: 16
+    sets: 3
+    reps: '30 秒'
+    rest_seconds: 60
+
+# === 區塊二：強化期（Week 5-8）加 2 秒停頓增加張力，次數由 6 漸增到 8 ===
+- date: '2026-12-29'
+  label: 上肢補強 W5／12（強化期）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 4
+    reps: '6（底部停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 13
+    sets: 4
+    reps: '6/邊（頂端停頓 2 秒）'
     rest_seconds: 120
   - exercise_id: 2
     sets: 4
-    reps: '8-10'
+    reps: '6（底部停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 15
+    sets: 4
+    reps: '5'
     rest_seconds: 90
-  - exercise_id: 3
+  - exercise_id: 16
     sets: 3
-    reps: '12-15'
+    reps: '30 秒'
     rest_seconds: 60
 
-- date: '2026-12-04'
-  label: 拉力日（背/二頭）
+- date: '2027-01-05'
+  label: 上肢補強 W6／12（強化期）
   warmup:
     duration: 10 分鐘
-    note: 動態伸展 + 輕重量熱身組
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
   blocks:
-  - exercise_id: 4
+  - exercise_id: 12
     sets: 4
-    reps: '8-10'
+    reps: '7（底部停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 13
+    sets: 4
+    reps: '7/邊（頂端停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 2
+    sets: 4
+    reps: '7（底部停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 15
+    sets: 4
+    reps: '6'
     rest_seconds: 90
-  - exercise_id: 5
-    sets: 4
-    reps: '10-12'
-    rest_seconds: 75
-  - exercise_id: 6
+  - exercise_id: 16
     sets: 3
-    reps: '10-12'
+    reps: '35 秒'
+    rest_seconds: 60
+
+- date: '2027-01-12'
+  label: 上肢補強 W7／12（強化期）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 4
+    reps: '8（底部停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 13
+    sets: 4
+    reps: '8/邊（頂端停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 2
+    sets: 4
+    reps: '8（底部停頓 2 秒）'
+    rest_seconds: 120
+  - exercise_id: 15
+    sets: 4
+    reps: '7'
+    rest_seconds: 90
+  - exercise_id: 16
+    sets: 3
+    reps: '35 秒'
+    rest_seconds: 60
+
+- date: '2027-01-19'
+  label: 上肢補強 W8／12（強化期．區塊測試）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 4
+    reps: '8（下放 3 秒）'
+    rest_seconds: 120
+  - exercise_id: 13
+    sets: 4
+    reps: '8/邊（下放 3 秒）'
+    rest_seconds: 120
+  - exercise_id: 2
+    sets: 4
+    reps: '8（下放 3 秒）'
+    rest_seconds: 120
+  - exercise_id: 15
+    sets: 4
+    reps: '8（換更細彈力帶，若有）'
+    rest_seconds: 90
+  - exercise_id: 16
+    sets: 3
+    reps: '40 秒'
+    rest_seconds: 60
+
+# === 區塊三：巔峰期（Week 9-12）重量固定改走高次數，引體向上改全程測試 ===
+- date: '2027-01-26'
+  label: 上肢補強 W9／12（巔峰期）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 4
+    reps: '15'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 4
+    reps: '15/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 4
+    reps: '15'
+    rest_seconds: 90
+  - exercise_id: 17
+    sets: 3
+    reps: 'AMRAP（全程不輔助）'
+    rest_seconds: 120
+  - exercise_id: 16
+    sets: 3
+    reps: '40 秒'
+    rest_seconds: 60
+
+- date: '2027-02-02'
+  label: 上肢補強 W10／12（巔峰期）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 4
+    reps: '17'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 4
+    reps: '17/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 4
+    reps: '17'
+    rest_seconds: 90
+  - exercise_id: 17
+    sets: 3
+    reps: 'AMRAP（全程不輔助）'
+    rest_seconds: 120
+  - exercise_id: 16
+    sets: 3
+    reps: '45 秒'
+    rest_seconds: 60
+
+- date: '2027-02-09'
+  label: 上肢補強 W11／12（巔峰期）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 4
+    reps: '20'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 4
+    reps: '20/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 4
+    reps: '20'
+    rest_seconds: 90
+  - exercise_id: 17
+    sets: 3
+    reps: 'AMRAP（全程不輔助）'
+    rest_seconds: 120
+  - exercise_id: 16
+    sets: 3
+    reps: '45 秒'
+    rest_seconds: 60
+
+- date: '2027-02-16'
+  label: 上肢補強 W12／12（巔峰期．結訓測試）
+  warmup:
+    duration: 10 分鐘
+    note: 肩關節繞環 + 彈力帶肩外旋 + 輕重量熱身組
+  blocks:
+  - exercise_id: 12
+    sets: 4
+    reps: '20'
+    rest_seconds: 90
+  - exercise_id: 13
+    sets: 4
+    reps: '20/邊'
+    rest_seconds: 90
+  - exercise_id: 2
+    sets: 4
+    reps: '20'
+    rest_seconds: 90
+  - exercise_id: 17
+    sets: 3
+    reps: 'AMRAP（測試連續下數，與起點的 0 下比較）'
+    rest_seconds: 120
+  - exercise_id: 16
+    sets: 3
+    reps: '45-60 秒'
     rest_seconds: 60

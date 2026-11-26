@@ -23,6 +23,20 @@ categories:
     - 下放時控制速度，避免彈震。
     - 鎖定肩胛穩定再推起。
     summary: 複合推力動作，主練胸大肌、前三角肌與肱三頭肌。
+  - id: 12
+    title_zh: 啞鈴臥推
+    title_en: Dumbbell Bench Press
+    default_sets: 4
+    default_reps: '8-10'
+    default_rest_seconds: 90
+    method:
+    - 躺在平板凳或地面，雙手持啞鈴置於胸側，掌心朝前方或相對。
+    - 啞鈴往上推至手臂接近伸直，啞鈴於胸口正上方對齊。
+    - 緩慢下放至啞鈴貼近胸側，手肘約 45 度角。
+    points:
+    - 全程收緊核心，避免腰部過度拱起。
+    - 下放時控制速度，不借力彈震。
+    summary: 複合推力動作，主練胸大肌、前三角肌與肱三頭肌，啞鈴版本可加大活動範圍。
   - id: 2
     title_zh: 啞鈴肩推
     title_en: Dumbbell Shoulder Press
@@ -99,6 +113,20 @@ categories:
     - 避免借用身體擺盪發力。
     - 全程控制速度，尤其是離心階段。
     summary: 孤立動作，主練肱二頭肌。
+  - id: 13
+    title_zh: 啞鈴划船（單臂）
+    title_en: One-Arm Dumbbell Row
+    default_sets: 4
+    default_reps: '10-12/邊'
+    default_rest_seconds: 90
+    method:
+    - 單手扶穩平板凳或椅背，同側膝蓋跪於凳上，背部打平與地面平行。
+    - 另一手持啞鈴，手臂自然下垂，啞鈴拉向腰側，手肘貼近身體。
+    - 緩慢下放至手臂完全伸展，感受背闊肌伸展後再拉起。
+    points:
+    - 避免用軀幹扭轉借力，肩胛主動下壓後收。
+    - 兩側分別完成組數，弱側可額外加做。
+    summary: 單臂拉系動作，直接訓練引體向上所需的背闊肌與握力。
 
 - code: '03'
   title_zh: 下肢
@@ -181,3 +209,65 @@ categories:
     - 全程維持下背貼地，避免代償拱腰。
     - 動作放慢，強調控制而非速度。
     summary: 抗伸展核心訓練，強化軀幹控制能力。
+
+- code: '05'
+  title_zh: 引體向上專項
+  title_en: Pull-up Specialization
+  focus: 針對引體向上建立獨立的漸進式訓練軌道，從離心控制、輔助減量到全程自體重完成。
+  exercises:
+  - id: 14
+    title_zh: 引體向上離心
+    title_en: Negative Pull-up
+    default_sets: 3
+    default_reps: '3-5'
+    default_rest_seconds: 90
+    method:
+    - 使用跳躍、踏階或椅子輔助，直接讓下巴到達單槓上方的頂端位置。
+    - 盡量放慢下放速度（目標 3-5 秒），直到手臂完全伸直。
+    - 回到起始姿勢後重複，每下都從頂端開始下放。
+    points:
+    - 全程保持核心收緊，避免身體擺盪。
+    - 下放速度是重點，寧可少下數但放慢。
+    summary: 建立拉系離心控制力，是全程引體向上前的關鍵準備動作。
+  - id: 15
+    title_zh: 彈力帶輔助引體向上
+    title_en: Band-Assisted Pull-up
+    default_sets: 4
+    default_reps: '5-8'
+    default_rest_seconds: 90
+    method:
+    - 將彈力帶一端固定於單槓上，另一端套住單腳或雙腳膝蓋處。
+    - 雙手正握或反握單槓，彈力帶提供部分向上輔助力。
+    - 拉起至下巴過槓，緩慢下放至手臂完全伸展。
+    points:
+    - 隨著能力進步換成阻力更小的彈力帶，逐步減少輔助。
+    - 避免完全依賴彈力帶彈振發力。
+    summary: 漸進式降低輔助力道的引體向上訓練，銜接離心訓練與全程動作。
+  - id: 16
+    title_zh: 死掛
+    title_en: Dead Hang
+    default_sets: 3
+    default_reps: '20-30 秒'
+    default_rest_seconds: 60
+    method:
+    - 雙手正握單槓，與肩同寬，身體自然懸吊放鬆肩膀。
+    - 保持核心微收，避免身體大幅擺盪。
+    - 維持穩定呼吸，計時撐住後放下休息。
+    points:
+    - 感受肩胛與握力的張力，而非聳肩代償。
+    - 握不住時可提早放下，避免摔落受傷。
+    summary: 強化握力與肩胛穩定度，是引體向上的基礎支撐能力。
+  - id: 17
+    title_zh: 引體向上
+    title_en: Pull-up
+    default_sets: 3
+    default_reps: 'AMRAP'
+    default_rest_seconds: 120
+    method:
+    - 雙手正握單槓，略寬於肩，身體自然懸吊。
+    - 拉起至下巴過槓，頂端稍停夾緊背部。
+    - 緩慢下放至手臂完全伸展，再進行下一下。
+    points:
+    - 全程避免大幅擺盪借力。
+    - 做到力竭前的最後一下仍保持標準動作再停止。
+    summary: 全程自體重拉系動作，是引體向上專項訓練的最終測試動作。
